@@ -1,0 +1,244 @@
+/*
+|-------------------------------------------------------------------------------------------------------------------------------
+| Variables
+|-------------------------------------------------------------------------------------------------------------------------------
+|
+*/
+@color-golden-orange-brand: #ffc211;
+@color-charcoal-brand: #212a32;
+@font-mm: pyidaungsu;
+@fontawesome: 'Font Awesome 5 Free';
+
+.transition(@duration: .3s, @ease: ease-in-out) {
+	-webkit-transition: all @duration @ease;
+	-moz-transition: all @duration @ease;
+	-o-transition: all @duration @ease;
+	-ms-transition: all @duration @ease;
+	transition: all @duration @ease;
+}
+/*
+|-------------------------------------------------------------------------------------------------------------------------------
+| WordPress Core styles
+|-------------------------------------------------------------------------------------------------------------------------------
+|
+*/
+a {
+	img {
+		&.aligncenter {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&.alignnone {
+			margin: 5px 20px 20px 0;
+		}
+		&.alignright {
+			float: right;
+			margin: 5px 0 20px 20px;
+		}
+		&.alignleft {
+			float: left;
+			margin: 5px 20px 20px 0;
+		}
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%;
+	text-align: center;
+	padding: 5px 3px 10px;
+	img {
+		border: 0 none;
+		height: auto;
+		max-width: 98.5%;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		&.wp-caption-text {
+			font-size: 11px;
+			line-height: 17px;
+			margin: 0;
+			padding: 0 4px 5px;
+		}
+	}
+	&.alignright {
+		margin: 5px 0 20px 20px;
+	}
+	&.alignnone {
+		margin: 5px 20px 20px 0;
+	}
+	&.alignleft {
+		margin: 5px 20px 20px 0;
+	}
+}
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.aligncenter {
+	display: block;
+	margin: 5px auto;
+}
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+footer {
+	background: @color-charcoal-brand;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+	.copyright-container {
+		text-align: center;
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			font-size: 14px;
+			color: #b4b4b4;
+			.transition();
+			.service-owner {
+				color: @color-golden-orange-brand;
+			}
+			&:hover {
+				color: @color-golden-orange-brand;
+			}
+		}
+		.service-owner-logo {
+			width: 46px;
+			margin-left: 7px;
+		}
+	}
+}
+
+/*
+|-------------------------------------------------------------------------------------------------------------------------------
+| Media Query (Min)
+|-------------------------------------------------------------------------------------------------------------------------------
+| Small devices (landscape phones, 576px and up), 
+| Medium devices (tablets, 768px and up), 
+| Large devices (desktops, 992px and up), 
+| Extra large devices (large desktops, 1200px and up), 
+| and other standard screen sizes (414px, 375px and 320px and up - Note: get from browser)
+|-------------------------------------------------------------------------------------------------------------------------------
+|
+*/
+// Small devices (landscape phones, 320px and up)
+@media (min-width: 320px) {
+}
+
+// Small devices (landscape phones, 375px and up)
+@media (min-width: 375px) {
+}
+
+// Small devices (landscape phones, 414px and up)
+@media (min-width: 414px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Large devices (normal laptop)
+@media (min-width: 1368px) { 
+}
+
+/*
+|-------------------------------------------------------------------------------------------------------------------------------
+| Media Query (Max)
+|-------------------------------------------------------------------------------------------------------------------------------
+| Large devices (desktops, less than 1200px), 
+| Medium devices (tablets, less than 992px), 
+| Small devices (landscape phones, less than 768px), 
+| Extra small devices (portrait phones, less than 576px), 
+| and other standard screen sizes (less than 414px, 375px and 320px - Note: get from browser)
+|-------------------------------------------------------------------------------------------------------------------------------
+|
+*/
+// Large devices (normal laptop)
+@media (max-width: 1367.98px) { 
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+}
+
+// Medium devices (tablets, less than 991.98px)
+@media (max-width: 991.98px) { 
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Extra small devices (portrait phones, less than 414px)
+@media (max-width: 413.98px) { 
+}
+
+// Extra small devices (portrait phones, less than 375px)
+@media (max-width: 374.98px) { 
+}
+
+// Extra small devices (portrait phones, less than 320px)
+@media (max-width: 319.98px) { 
+}
+
+/*
+|-------------------------------------------------------------------------------------------------------------------------------
+| Media Query (Min and Max)
+|-------------------------------------------------------------------------------------------------------------------------------
+| Small devices (landscape phones, 576px and up), 
+| Medium devices (tablets, 768px and up), 
+| Large devices (desktops, 992px and up), 
+| Extra large devices (large desktops, 1200px and up)
+|-------------------------------------------------------------------------------------------------------------------------------
+|
+*/
+// Small devices (landscape phones, 320px and up)
+@media (min-width: 320px) and (max-width: 374.98px) {
+}
+
+// Small devices (landscape phones, 375px and up)
+@media (min-width: 375px) and (max-width: 413.98px) {
+}
+
+// Small devices (landscape phones, 414px and up)
+@media (min-width: 414px) and (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
