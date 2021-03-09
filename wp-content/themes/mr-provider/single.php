@@ -1,16 +1,27 @@
 <?php get_header(); ?>
-    <main>
+<?php get_template_part('partials/inner-banner'); ?>
+<?php
+    $n_image = get_the_post_thumbnail_url();
+    $n_date = get_the_date('M d, Y');
+?>
+    <main class="single-news pd60">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <?php if ($post->post_title) { ?>
-                        <h2 class="post-main-title my-5"><?php echo $post->post_title; ?></h2>
-                    <?php } ?>
-                    <?php if ($post->post_content) { ?>
-                        <article class="main-article">
+                <div class="col-8">
+                    <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" data-aos-offset="0">
+                        <img src="<?php echo $n_image; ?>" alt="News Image" class="w-100">
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <div class="n-date" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="500" data-aos-offset="0">
+                            <span><?php echo 'Posted on '.$n_date; ?></span>
+                        </div>
+                        <div class="news-content" data-aos="zoom-in-up" data-aos-delay="700">
                             <?php echo apply_filters('the_content', $post->post_content); ?>
-                        </article>
-                    <?php } ?>
+                        </div>
+                    </div>
+                </div>              
+                <div class="col-4">
+                    <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>

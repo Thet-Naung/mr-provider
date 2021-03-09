@@ -29,21 +29,38 @@ if ($site_info['logo']) {
     $logo = ASSET_URL.'images/logo.png';
 }
 ?>
-<?php if ($logo) { ?>
-    <a href="<?php echo WP_HOME; ?>" title="<?php bloginfo('name'); ?>" class="logo-name">
-        <img src="<?php echo WP_HOME.$logo; ?>" class="img-fluid main-logo" alt="<?php bloginfo('name'); ?>">
-    </a>
-<?php } ?>
 
-    <nav class="stellarnav clearfix">
-        <?php  
-        wp_nav_menu(array(
-            'theme_location' => 'main',
-            'menu' => 'main-menu',
-            'depth' => 0,
-            'menu_class' => 'menu',
-            'container' => '',
-            'container_class' => ''
-        ));
-        ?>
-    </nav>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-9">
+                <div class="logo-bg">
+                    <?php if ($logo) { ?>
+                        <a href="<?php echo WP_HOME; ?>" title="<?php bloginfo('name'); ?>" class="logo-name">
+                            <img src="<?php echo WP_HOME.$logo; ?>" class="img-fluid main-logo" alt="<?php bloginfo('name'); ?>">
+                        </a>
+                    <?php } ?>
+                </div>
+            </div>
+            <div class="col-lg-9 col-3 d-flex align-items-center">
+                <nav class="stellarnav clearfix">
+                    <?php  
+                    wp_nav_menu(array(
+                        'theme_location' => 'main',
+                        'menu' => 'main-menu',
+                        'depth' => 0,
+                        'menu_class' => 'menu',
+                        'container' => '',
+                        'container_class' => ''
+                    ));
+                    ?>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<?php if ( is_front_page() ) { ?>
+    <div class="hm-banner">
+        <?php echo do_shortcode('[smartslider3 slider="2"]'); ?>
+    </div>
+<?php } ?>

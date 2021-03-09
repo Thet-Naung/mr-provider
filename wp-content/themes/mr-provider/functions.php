@@ -6,7 +6,7 @@ require_once('includes/theme-options.php');
 require_once('includes/customize-dashboard.php');
 require_once('includes/lessc.inc.php');
 require_once('includes/minifycss.php');
-//require_once('includes/custom-post-types.php');
+require_once('includes/custom-post-types.php');
 //require_once('includes/custom-blocks.php');
 //require_once('includes/wp-bootstrap-navwalker.php');
 
@@ -15,7 +15,7 @@ require_once('includes/minifycss.php');
 | CSS merge and minify process
 |-------------------------------------------------------------------------------------------------------------------------------
 */
-if ($_SERVER['HTTP_HOST'] == 'vhost.b360' || strpos($_SERVER['HTTP_HOST'], '192') !== false) {
+if ($_SERVER['HTTP_HOST'] == 'mr-provider.b360' || strpos($_SERVER['HTTP_HOST'], '192') !== false) {
 
     /* using LESS */
     $less = new lessc;
@@ -63,7 +63,7 @@ function init_scripts() {
 function add_scripts() {
     $js_path = ASSET_URL . 'js';
     $css_path = ASSET_URL . 'css';
-    if ($_SERVER['HTTP_HOST'] == 'vhost.b360' || strpos($_SERVER['HTTP_HOST'], '192') !== false) {
+    if ($_SERVER['HTTP_HOST'] == 'mr-provider.b360' || strpos($_SERVER['HTTP_HOST'], '192') !== false) {
         $js_libs = array(
             array(
                 'name' => 'jquery',
@@ -141,6 +141,13 @@ function add_scripts() {
             array(
                 'name' => 'stellarnav',
                 'src' => $css_path . '/stellarnav.min.css',
+                'dep' => null,
+                'ver' => null,
+                'media' => 'screen'
+            ),
+            array(
+                'name' => 'google-font',
+                'src' => 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swapp',
                 'dep' => null,
                 'ver' => null,
                 'media' => 'screen'
@@ -231,6 +238,13 @@ function add_scripts() {
             array(
                 'name' => 'stellarnav',
                 'src' => $css_path . '/stellarnav.min.css',
+                'dep' => null,
+                'ver' => null,
+                'media' => 'screen'
+            ),
+            array(
+                'name' => 'google-font',
+                'src' => 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap',
                 'dep' => null,
                 'ver' => null,
                 'media' => 'screen'
@@ -414,6 +428,9 @@ if (function_exists('register_nav_menus')) {
     register_nav_menus(
         array(
             'main' => 'Main',
+            'footer1' => 'Footer1',
+            'footer2' => 'Footer2',
+            'footer3' => 'Footer3',
             'helpful' => 'Helpful Info',
             'privacy' => 'Privacy Info',
         )

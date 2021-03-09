@@ -19,8 +19,8 @@
  */
 
 switch ($_SERVER['HTTP_HOST']) {    
-    case 'vhost.b360':    
-        define('DB_NAME', '');
+    case 'mr-provider.b360':    
+        define('DB_NAME', 'mr_provider');
         define('DB_USER', 'root');
         define('DB_PASSWORD', '');
         define('DB_HOST', 'localhost');
@@ -45,7 +45,7 @@ switch ($_SERVER['HTTP_HOST']) {
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'pd_';
+$table_prefix  = 'mp_';
 
 /** 
  * Protocol
