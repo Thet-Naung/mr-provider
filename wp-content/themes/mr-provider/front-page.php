@@ -177,7 +177,7 @@
                             $n_link = get_permalink($id);
                         ?>
                             <div class="col-lg-3 col-sm-6 news-col">
-                                <div class="news-box" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="5 00" data-aos-offset="0">
+                                <div class="news-box" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-offset="0">
                                     <a href="<?php echo $n_link; ?>" title="News Page">
                                         <?php echo $n_content; ?>
                                         <div class="date">

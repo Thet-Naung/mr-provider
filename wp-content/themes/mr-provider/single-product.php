@@ -4,6 +4,7 @@
     $p = get_fields();
     $galleries = $p['gallery'];
     $specifications = $p['specification'];
+    $product_content = $p['product_content'];
     $description = $p['description'];
     $features = $p['features'];
 ?>
@@ -83,29 +84,28 @@
                                         </tbody>
                                     </table>
                                 </div>
+                            <?php } else { ?>
+                                <?php echo apply_filters('the_content', $post->post_content); ?>
                             <?php } ?>
                         </div>
                         <div class="col-12">
-                            <div class="p-description" data-aos="zoom-out" data-aos-delay="600">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <?php if ( $description ) { ?>
-                                        <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="true">Description</a>
-                                    <?php } ?>
-                                    <?php if ( $features ) { ?>    
-                                        <a class="nav-item nav-link" id="nav-features-tab" data-toggle="tab" href="#nav-features" role="tab" aria-controls="nav-features" aria-selected="false">Features</a>
-                                    <?php } ?>
+                            <?php if ( $product_content ) { ?>
+                                <div class="p-description" data-aos="zoom-out" data-aos-delay="600">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <?php foreach ( $product_content as $pkey => $p_content ) { ?>
+                                            <a class="nav-item nav-link <?php if ( $pkey == 0 ) { echo 'active'; }else { echo ' '; } ?>" id="<?php echo 'description'.$pkey.'-tab'; ?>" data-toggle="tab" href="#<?php echo 'description'.$pkey; ?>" role="tab" aria-controls="nav-description" aria-selected="true"><?php echo $p_content['title']; ?></a>
+                                        <?php } ?>
+                                    
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <?php foreach ( $product_content as $pkey => $p_content ) { ?>
+                                            <div class="tab-pane fade <?php if ( $pkey == 0 ) { echo 'show active'; }else { echo ' '; } ?>" id="<?php echo 'description'.$pkey; ?>" role="tabpanel" aria-labelledby="<?php echo 'description'.$pkey.'-tab'; ?>"><?php echo $p_content['content']; ?></div>
+                                        <?php } ?>
                                     </div>
-                                </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <?php if ( $description ) { ?>
-                                        <div class="tab-pane fade show active" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab"><?php echo $description; ?></div>
-                                    <?php } ?>
-                                    <?php if ( $features ) { ?>
-                                        <div class="tab-pane fade" id="nav-features" role="tabpanel" aria-labelledby="nav-features-tab"><?php echo $features; ?></div>
-                                    <?php } ?>
                                 </div>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
                 <?php } ?>

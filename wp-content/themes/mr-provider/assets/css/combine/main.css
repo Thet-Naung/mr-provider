@@ -693,9 +693,12 @@ header .stellarnav ul.sub-menu li a {
   background-color: #f1f1f1;
 }
 .single-product .p-description .tab-content {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 30px 20px 20px 20px;
   border: 1px solid #dee2e6;
+}
+.single-product .p-description .tab-content ul,
+.single-product .p-description .tab-content ol {
+  padding-left: 20px;
 }
 .single-product .p-description .tab-content li {
   margin-bottom: 10px;
@@ -992,7 +995,6 @@ footer ul li:before {
   }
   .obj-bg .ab-obj {
     padding: 20px 12px;
-    bottom: -120px;
   }
   .ab-pg {
     padding-bottom: 150px;
@@ -1033,6 +1035,9 @@ footer ul li:before {
   }
   .hm-news .news-box {
     padding: 40px;
+  }
+  .obj-bg .ab-obj {
+    bottom: -120px;
   }
 }
 @media (max-width: 374.98px) {
