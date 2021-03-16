@@ -19,7 +19,7 @@
 
 # ignore log files and databases
 *.log
-*.sql
+#.sql
 *.sqlite
 *Thumbs.db
 *.DS_Store
