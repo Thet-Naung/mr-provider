@@ -11,7 +11,7 @@ get_header();
             <div class="heading-style">
                 <h1 class="border-text border-text-white">News & Activities <h2 class="title-black">News & Activities</h2> </h1>
             </div>
-            <div class="hm-news">
+            <div class="">
                 <?php 
                     $args = array(
                         'post_type'   => 'post',
@@ -33,18 +33,20 @@ get_header();
                             $n_link = get_permalink($id);
                         ?>
                             <div class="col-md-4">
-                                <div class="news-box" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="<?php echo $n*2; ?>00" data-aos-offset="0">
-                                    <a href="<?php echo $n_link; ?>" title="News Page">
-                                        <?php echo $n_content; ?>
-                                        <div class="date">
-                                            <span><?php echo $n_date; ?></span>
-                                        </div>
-                                        <div class="news-overlay" style="background: url(<?php echo $n_image[0]; ?>) center no-repeat;">
-                                            <div class="n-inner-overlay">
-                                                <?php echo $n_content; ?>
-                                            </div>    
-                                        </div>
-                                    </a>
+                                <div class="inner-news-box" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="<?php echo $n*2; ?>00" data-aos-offset="0">
+                                    <div class="news-box" style="background: url(<?php echo $n_image[0]; ?>) center no-repeat;">
+                                        <a href="<?php echo $n_link; ?>" title="News Page">
+                                            <?php echo $n_content; ?>
+                                            <div class="date">
+                                                <span><?php echo $n_date; ?></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="news-overlay">
+                                        <!-- <div class="n-inner-overlay">
+                                            <?php //echo $n_content; ?>
+                                        </div>     -->
+                                    </div>
                                 </div>
                             </div>
                         <?php $n++; } ?>

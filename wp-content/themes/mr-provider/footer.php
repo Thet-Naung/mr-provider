@@ -45,8 +45,9 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div id="fb-root"></div> <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="x3czE58V"></script>
-                    <div class="fb-page" data-href="https://www.facebook.com/minthitsarprovider" data-tabs="timeline" data-width="" data-height="246" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/minthitsarprovider" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/minthitsarprovider">Mr. Provider</a></blockquote></div>
+                    <!-- <div id="fb-root"></div> <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="x3czE58V"></script>
+                    <div class="fb-page" data-href="https://www.facebook.com/minthitsarprovider" data-tabs="timeline" data-width="" data-height="246" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/minthitsarprovider" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/minthitsarprovider">Mr. Provider</a></blockquote></div> -->
+                    <a href="https://www.facebook.com/minthitsarprovider" title="facebook" target="_blank"><img src="/wp-content/uploads/2021/03/facebook-screenshot.png"></a>
                 </div>
             </div>
         </div>

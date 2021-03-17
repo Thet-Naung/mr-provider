@@ -33,7 +33,7 @@
                         <?php if ( $ab_content ) { echo $ab_content; } ?>
                     </div>
                     <div class="btn-space" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400" data-aos-offset="0">
-                        <a href="#" title="about page" class="btn btn-primary hover-filled-slide-up">read more</a>
+                        <a href="/about-us/" title="about page" class="btn btn-primary hover-filled-slide-up">read more</a>
                     </div>
                 </div>    
             </div>
@@ -88,7 +88,7 @@
             </div>
         <?php } ?>
         <div class="btn-space text-center" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400" data-aos-offset="0">
-            <a href="#" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
+            <a href="/service/" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
         </div>
     </section>
     <!-- end service -->
@@ -142,7 +142,7 @@
             </div>
         </div>
         <div class="btn-space text-center" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="<?php echo $s; ?>00" data-aos-offset="0">
-            <a href="#" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
+            <a href="/product/" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
         </div>
     </section>
     <!-- end product -->
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-4  d-sm-block d-none">
                     <div class="btn-space text-right" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-delay="400" data-aos-offset="0">
-                        <a href="#" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
+                        <a href="/news-activities/" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                         <?php } ?>
                             <div class="col-12">
                             <div class="btn-space text-center d-sm-none d-block">
-                                <a href="#" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
+                                <a href="/news-activities/" title="about page" class="btn btn-primary hover-filled-slide-up">view more</a>
                             </div>
                             </div>
                     </div>            
@@ -209,7 +209,7 @@
                     </div>
                     <div class="col-xl-2 col-lg-3 d-sm-flex align-items-center">
                         <div class="text-sm-right text-center">
-                            <a href="#" title="Service Page" class="btn btn-default hover-filled-slide-up">read more</a>
+                            <a href="/service/" title="Service Page" class="btn btn-default hover-filled-slide-up">read more</a>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-3 d-sm-block d-none">

@@ -50,6 +50,7 @@
                         <div class="col-lg-6">
                             <div class="contact-message" data-aos="fade-up-left" data-aos-easing="ease" data-aos-delay="300" data-aos-offset="0">
                                 <h3 class="title-black">Send a message</h3>
+                                <?php echo do_shortcode('[contact-form-7 id="252" title="Contact form"]'); ?>
                             </div>
                         </div>    
                     </div>
