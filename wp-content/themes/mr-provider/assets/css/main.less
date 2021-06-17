@@ -276,6 +276,9 @@ header {
 		}
 	}
 }
+.stellarnav.mobile ul {
+	background: @color-secondary;
+}
 .swiper-slide {
 	background-size: cover;
 	background-position: center;
@@ -404,6 +407,10 @@ header {
 	.products {
 		position: relative;
 		margin-top: 30px;
+		.card {
+			background: transparent;
+			border: 0;
+		}
 		.product-box {
 			position: relative;
 			overflow: hidden;
@@ -431,6 +438,10 @@ header {
 					}
 				}
 			}
+			.card-body {
+				padding: 0;
+				background: none;
+			}
 		}
 		.p-content {
 			background: @color-white;
@@ -439,6 +450,7 @@ header {
 			padding: 30px 20px;
 			margin-left: 15px;
 			margin-right: 15px;
+			min-height: 193px;
 			.transition();
 			span.badge {
 				padding: 5px 20px;
@@ -454,7 +466,6 @@ header {
 				font-size: 20px;
 				font-weight: 700;
 				color: #535B60;
-				min-height: 48px;
 			}
 			.border-line {
 				position: relative;
@@ -620,25 +631,56 @@ header {
 
 /* about */
 .ab-pg {
-	padding-bottom: 180px;
+	padding-bottom: 0;
+}
+.our-goal {
+	margin-top: 30px;
+	.ab-obj {
+		background: @gray-light;
+		padding: 50px;
+		position: relative;
+		text-align: center;
+		min-height: 250px;
+		border-radius: 10px;
+		h3 {
+			font-size: 25px;
+		}
+	}
 }
 .obj-bg {
 	background: url(/wp-content/uploads/2021/03/Crane-Pendant-Stations.jpg) no-repeat;
 	background-position: center;
+	background-size: cover;
 	width: 100%;
-	height: 500px;
 	position: relative;
-	.ab-obj {
+	margin-top: 50px;
+	padding: 50px 0;
+	.ab-message {
+		background: #000000b0;
+    	padding: 50px;
 		h3 {
+			margin-bottom: 30px;
 			text-transform: uppercase;
+			color: @color-primary;
 		}
-		background: @gray-light;
-		padding: 100px 50px;
-		position: relative;
-		text-align: center;
-		bottom: -200px;
+		p{
+			color: @color-white;
+		}
+		a {
+			transition: all 0.4s;
+			color: @color-primary;
+			&:hover {
+				color: @color-white;
+			}
+		}
+		img.founder {
+			border-top-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			width: 100%;
+		}
 	}
 }
+
 
 /* end about */
 
@@ -807,6 +849,11 @@ header {
 			}
 		}
 	}
+	.p-gallery {
+		.swiper-button-next, .swiper-button-prev {
+			color: @color-primary;
+		}
+	}
 }
 /* end product */
 
@@ -827,6 +874,15 @@ header {
 		margin-bottom: 40px;
 		img {
 			border-radius: 15px;
+		}
+	}
+	ol {
+		li {
+			// width: 48%;
+			// float: left;
+			// margin-right: 10px;
+			// margin-bottom: 15px;
+			
 		}
 	}
 }
@@ -1016,6 +1072,11 @@ footer {
 	.obj-bg {
 		margin-top: 50px;
 	}
+	.our-goal {
+		.ab-obj {
+			padding: 30px;
+		}
+	}
 }
 
 // Medium devices (tablets, less than 991.98px)
@@ -1080,6 +1141,19 @@ footer {
 	.p-specific {
 		margin-top: 30px;
 	}
+	.our-goal {
+		.ab-obj {
+			margin-top: 30px;
+		}
+	}
+	.ab-message {
+		img.founder {
+			width: 450px!important;
+			height: auto;
+			margin: 0 auto 30px auto;
+			display: block;
+		}
+	}
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -1123,12 +1197,6 @@ footer {
 			font-size: 30px;
 		}
 	}
-	.obj-bg {
-		height: 400px;
-		.ab-obj {
-			padding: 50px 30px;
-		}
-	}
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -1165,12 +1233,6 @@ footer {
 		}
 		.btn-space {
 			margin-top: 20px;
-		}
-	}
-	.obj-bg {
-		height: 350px;
-		.ab-obj {
-			padding: 20px 12px;
 		}
 	}
 	.ab-pg {
@@ -1222,11 +1284,6 @@ footer {
 	.hm-news {
 		.news-box {
 			padding: 40px;
-		}
-	}
-	.obj-bg {
-		.ab-obj {
-			bottom: -120px;
 		}
 	}
 }

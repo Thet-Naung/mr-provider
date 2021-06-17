@@ -15,7 +15,8 @@
                         foreach ( $p_terms as $p_term ) {
                             $id = $p_term->term_id;
                             $taxonomy = $p_term->taxonomy;
-                            $p_title = $p_term->name;
+                            $p_titles = $p_term->name;
+                            $p_title = wp_trim_words( $p_titles, 5, '...' );
                             $p_image = get_field('image', $taxonomy . '_' . $id);
                             $p_link = get_term_link($id);
                     ?>

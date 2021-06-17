@@ -101,6 +101,13 @@ function add_scripts() {
                 'is_footer' => true
             ),
             array(
+                'name' => 'fancyboxjs',
+                'src' => '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js',
+                'dep' => 'jquery',
+                'ver' => null,
+                'is_footer' => true
+            ),
+            array(
                 'name' => 'script',
                 'src' => $js_path . '/script.js',
                 'dep' => 'jquery',
@@ -153,6 +160,13 @@ function add_scripts() {
                 'media' => 'screen'
             ),
             array(
+                'name' => 'fancyboxcss',
+                'src' => '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css',
+                'dep' => null,
+                'ver' => null,
+                'media' => 'screen'
+            ),
+            array(
                 'name' => 'style',
                 'src' => TEMPLATE_URL . '/style.css',
                 'dep' => null,
@@ -193,6 +207,13 @@ function add_scripts() {
             array(
                 'name' => 'stellarnav',
                 'src' => $js_path . '/stellarnav.min.js',
+                'dep' => 'jquery',
+                'ver' => null,
+                'is_footer' => true
+            ),
+            array(
+                'name' => 'fancyboxjs',
+                'src' => '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js',
                 'dep' => 'jquery',
                 'ver' => null,
                 'is_footer' => true
@@ -245,6 +266,13 @@ function add_scripts() {
             array(
                 'name' => 'google-font',
                 'src' => 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap',
+                'dep' => null,
+                'ver' => null,
+                'media' => 'screen'
+            ),
+            array(
+                'name' => 'fancyboxcss',
+                'src' => '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css',
                 'dep' => null,
                 'ver' => null,
                 'media' => 'screen'

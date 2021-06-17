@@ -42,13 +42,13 @@
                                                 $img = aq_resize($gallery, 790, 450, true, true, true);    
                                             ?>
                                                 <div class="swiper-slide">
-                                                    <img src="<?php echo $img; ?>" alt="<?php echo $p_title; ?>" class="w-100">
+                                                <a data-fancybox="gallery" href="<?php echo $gallery; ?>"><img src="<?php echo $img; ?>" alt="<?php echo $p_title; ?>" class="w-100"></a>
                                                 </div>
                                             <?php } ?>
                                         </div>
                                         <!-- Add Arrows -->
-                                        <div class="swiper-button-next swiper-button-white"></div>
-                                        <div class="swiper-button-prev swiper-button-white"></div>
+                                        <div class="swiper-button-next single-product-next"></div>
+                                        <div class="swiper-button-prev single-product-prev"></div>
                                     </div>
                                     <div class="swiper-container gallery-thumbs">
                                         <div class="swiper-wrapper">
@@ -90,7 +90,7 @@
                         </div>
                         <div class="col-12">
                             <?php if ( $product_content ) { ?>
-                                <div class="p-description" data-aos="zoom-out" data-aos-delay="600">
+                                <div class="p-description" data-aos="zoom-out" data-aos-delay="400">
                                     <nav>
                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <?php foreach ( $product_content as $pkey => $p_content ) { ?>

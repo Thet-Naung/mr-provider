@@ -64,7 +64,7 @@
                             $s_content = $service->post_excerpt;
                             $thumb = get_post_thumbnail_id($id);
                             $s_images = wp_get_attachment_image_src($thumb, 'full');
-                            $s_image = aq_resize($s_images[0], 267, 368, true, true);  
+                            $s_image = aq_resize($s_images[0], 218, 300, true, true);  
                             $s_link = get_permalink($id);
                         ?>
                             <div class="col-lg-3 col-6">
@@ -108,7 +108,8 @@
                     
                         <?php foreach ( $products as $product ) { 
                             $id = $product->ID;
-                            $p_title = $product->post_title;
+                            $p_titles = $product->post_title;
+                            $p_title = wp_trim_words( $p_titles, 5, '...' );
                             $thumb = get_post_thumbnail_id($id);
                             $p_images = wp_get_attachment_image_src($thumb, 'full');
                             $p_image = aq_resize($p_images[0], 350, 249, true, true);

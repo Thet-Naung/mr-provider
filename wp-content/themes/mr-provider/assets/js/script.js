@@ -63,8 +63,8 @@ $(document).ready(function() {
 	  var galleryTop = new Swiper('.gallery-top', {
 		spaceBetween: 10,
 		navigation: {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev',
+		  nextEl: '.single-product-next',
+		  prevEl: '.single-product-prev',
 		},
 		thumbs: {
 		  swiper: galleryThumbs
