@@ -21,7 +21,7 @@
                             $p_link = get_term_link($id);
                     ?>
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="product-box" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="<?php echo $p*2; ?>00" data-aos-offset="0">
+                            <div class="product-box" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="<?php echo $p; ?>00" data-aos-offset="0">
                                 <a href="<?php echo $p_link; ?>" title="<?php echo $p_title; ?>"><img src="<?php echo $p_image; ?>" alt=""></a>
                                 <a href="<?php echo $p_link; ?>" title="<?php echo $p_title; ?>">
                                     <div class="p-content">

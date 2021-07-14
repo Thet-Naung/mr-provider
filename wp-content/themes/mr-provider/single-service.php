@@ -6,7 +6,7 @@
 ?>
 <div class="single-service pd60">
     <div class="container">
-        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" data-aos-offset="0">
+        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" data-aos-offset="0">
             <div class="heading-style">
                 <h1 class="title-black"><?php echo $post->post_title; ?> </h1>
             </div>
@@ -29,7 +29,7 @@
                 ?>
                     <div class="row">
                         <div class="col-lg-9 offset-lg-1">
-                            <div class="scontent" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-delay="400" data-aos-offset="0">
+                            <div class="scontent" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-delay="200" data-aos-offset="0">
                                 <?php echo apply_filters('the_content', $s_content); ?>
                                 <?php if(!$services) { ?>
                                     <div class="text-center mt-4">

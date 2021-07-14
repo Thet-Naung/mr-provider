@@ -10,7 +10,7 @@
                 if ( have_posts() ) { ?>
                     <div class="row">
                         <?php
-                            $s = 2;
+                            $s = 1;
                             while ( have_posts() ) { the_post();
                                 $id = $post->ID;
                                 $s_title = $post->post_title;
@@ -21,7 +21,7 @@
                                 $s_link = get_permalink($id);
                         ?>
                             <div class="col-md-3">
-                                <div class="service-box" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="<?php echo $s*2 ?>00" data-aos-offset="0">
+                                <div class="service-box" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="<?php echo $s; ?>00" data-aos-offset="0">
                                     <div class="service-inner-box">
                                         <img src="<?php echo $s_image; ?>" alt="<?php echo $s_title; ?>">
                                         <div class="s-overlay">

@@ -59,8 +59,8 @@ $(document).ready(function() {
 		freeMode: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
-	  });
-	  var galleryTop = new Swiper('.gallery-top', {
+	});
+	var galleryTop = new Swiper('.gallery-top', {
 		spaceBetween: 10,
 		navigation: {
 		  nextEl: '.single-product-next',
@@ -69,7 +69,7 @@ $(document).ready(function() {
 		thumbs: {
 		  swiper: galleryThumbs
 		}
-	  });
+	});
 
 	// AOS Animate
 	AOS.init();

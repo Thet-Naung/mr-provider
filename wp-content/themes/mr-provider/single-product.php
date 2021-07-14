@@ -10,7 +10,7 @@
 ?>
 <div class="single-product pd60">
     <div class="container">
-        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" data-aos-offset="0">
+        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" data-aos-offset="0">
             <div class="heading-style">
                 <h1 class="title-black"><?php echo $post->post_title; ?> </h1>
             </div>
@@ -34,7 +34,7 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <?php if ( $galleries ) { ?>
-                                <div class="p-gallery" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="500" data-aos-offset="0">
+                                <div class="p-gallery" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="200" data-aos-offset="0">
                                     <!-- Swiper -->
                                     <div class="swiper-container gallery-top">
                                         <div class="swiper-wrapper">
@@ -63,14 +63,20 @@
                                     </div>
                                 </div>
                             <?php }else { ?>
-                                <div class="p-image" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="500" data-aos-offset="0">
-                                    <img src="<?php echo $p_image; ?>" alt="<?php echo $p_title; ?>">
+                                <div class="p-image" data-aos="fade-up-right" data-aos-easing="ease" data-aos-delay="200" data-aos-offset="0">
+                                    <img src="<?php echo $p_image; ?>" alt="<?php echo $p_title; ?>" class="w-100">
                                 </div>
                             <?php } ?>
                         </div>
                         <div class="col-lg-5">
+                            <?php if ( $features ) { ?>
+                                <div class="product-features" data-aos="fade-up-left" data-aos-delay="200">
+                                    <h3 class="title-black">Features</h3>
+                                    <?php echo apply_filters('the_content', $features); ?>
+                                </div>
+                            <?php } ?>
                             <?php if ( $specifications ) { ?>
-                                <div class="p-specific" data-aos="fade-up-left" data-aos-easing="ease" data-aos-delay="600" data-aos-offset="0">
+                                <div class="p-specific" data-aos="fade-up-left" data-aos-easing="ease" data-aos-delay="200" data-aos-offset="0">
                                     <h3 class="title-black">Specification</h3>
                                     <table class="table table-bordered table-striped">
                                         <tbody>
@@ -90,7 +96,7 @@
                         </div>
                         <div class="col-12">
                             <?php if ( $product_content ) { ?>
-                                <div class="p-description" data-aos="zoom-out" data-aos-delay="400">
+                                <div class="p-description" data-aos="zoom-out" data-aos-delay="200">
                                     <nav>
                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <?php foreach ( $product_content as $pkey => $p_content ) { ?>

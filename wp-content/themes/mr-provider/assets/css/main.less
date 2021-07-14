@@ -782,7 +782,16 @@ header {
 	}
 }
 .single-product {
-	.p-specific {
+	.product-features {
+		ul {
+			padding-left: 20px;
+			li {
+				margin-bottom: 10px;
+				list-style-type: circle;
+			}
+		}
+	}
+	.p-specific, .product-features {
 		h3.title-black {
 			font-size: 25px;
 			position: relative;
@@ -795,6 +804,8 @@ header {
 				bottom: -7px;
 			}
 		}
+	}
+	.p-specific {
 		table {
 			box-shadow: 1px 2px 2px 0 #ddd;
 			td {
@@ -849,9 +860,26 @@ header {
 			}
 		}
 	}
+	.p-image {
+		img {
+			background: @color-secondary;
+			padding: 15px;
+		}
+	}
 	.p-gallery {
 		.swiper-button-next, .swiper-button-prev {
 			color: @color-primary;
+		}
+		.swiper-slide {
+			img {
+				background: @color-secondary;
+				padding: 15px;
+			}
+		}
+		.gallery-thumbs {
+			img {
+				padding: 5px;
+			}
 		}
 	}
 }

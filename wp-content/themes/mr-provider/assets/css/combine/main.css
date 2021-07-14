@@ -733,12 +733,21 @@ header .stellarnav ul.sub-menu li a {
 .single-service #breadcrumbs a {
   color: #212A32;
 }
-.single-product .p-specific h3.title-black {
+.single-product .product-features ul {
+  padding-left: 20px;
+}
+.single-product .product-features ul li {
+  margin-bottom: 10px;
+  list-style-type: circle;
+}
+.single-product .p-specific h3.title-black,
+.single-product .product-features h3.title-black {
   font-size: 25px;
   position: relative;
   margin-bottom: 30px;
 }
-.single-product .p-specific h3.title-black:before {
+.single-product .p-specific h3.title-black:before,
+.single-product .product-features h3.title-black:before {
   content: '';
   width: 50px;
   border-bottom: 3px solid #FFCD11;
@@ -801,9 +810,20 @@ header .stellarnav ul.sub-menu li a {
 .single-product .p-description .nav-tabs .nav-link.active:after {
   background: #FFCD11;
 }
+.single-product .p-image img {
+  background: #212A32;
+  padding: 15px;
+}
 .single-product .p-gallery .swiper-button-next,
 .single-product .p-gallery .swiper-button-prev {
   color: #FFCD11;
+}
+.single-product .p-gallery .swiper-slide img {
+  background: #212A32;
+  padding: 15px;
+}
+.single-product .p-gallery .gallery-thumbs img {
+  padding: 5px;
 }
 .service-list .services {
   margin-top: 30px;

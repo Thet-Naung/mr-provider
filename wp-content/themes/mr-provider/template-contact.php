@@ -94,7 +94,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: location,
         map:map,
-        icon : '<?php echo ASSET_URL; ?>images/map.png',
+        // icon : '<?php echo ASSET_URL; ?>images/map.png',
         animation: google.maps.Animation.BOUNCE
     });
     marker.addListener('click', function() {
