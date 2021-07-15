@@ -14,7 +14,7 @@
                         while ( have_posts() ) { the_post();
                             $id = $post->ID;
                             $p_titles = $post->post_title;
-                            $p_title = wp_trim_words( $p_titles, 5, '...' );
+                            $p_title = wp_trim_words( $p_titles, 3, '...' );
                             $thumb = get_post_thumbnail_id($id);
                             $p_images = wp_get_attachment_image_src($thumb, 'full');
                             $p_image = aq_resize($p_images[0], 350, 249, true, true); 
